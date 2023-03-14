@@ -1,7 +1,7 @@
 :root {
   --background-color: rgb(6, 11, 25);
   --border-color: rgb(255, 255, 255, 0.1);
-  --highlight-color: rgb(126, 87, 194);
+  --highlight-color: rgb(135,113,220);
   --yt-color: rgb(229, 57, 53);
 }
 
@@ -18,8 +18,9 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, a, p, span {
-  font-family: "Rubik", sans-serif;
+h1, h2, h3, a, p, span, label {
+  /* font-family: "Rubik", sans-serif; */
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   color: white;
   margin: 0px;
@@ -37,6 +38,8 @@ nav {
   display: flex;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
+  z-index: 3;
+  background-color: rgb(6, 11, 25);
 }
 
 nav .nav-section {

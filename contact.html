@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleContact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav data-toggled="false" data-transitionable="false">
+      <div id="nav-logo-section" class="nav-section">
+        <a href="#">
+          <i class="fa-solid fa-landmark"></i>
+        </a>
+      </div>
+      <div id="nav-mobile-section">
+        <div id="nav-link-section" class="nav-section">
+          <a href="#">ABOUT</a>
+          <a href="./index.html">WORK</a>
+        </div>
+        <div id="nav-social-section" class="nav-section">
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="#">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+        <div id="nav-contact-section" class="nav-section">
+          <a href="./contact.html">GET IN TOUCH</a>
+        </div>
+      </div>
+      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <header class="header">
+      <div class="left-side">
+        
+        <div class="badger-class">CONTACT</div>
+        <h1 class="tituloh1">GET IN TOUCH</h1>
+        <div class="email-container">
+          <i class="bi bi-arrow-up-right arrowIcon"></i>
+          <p class="emailText">Carlosfgmendoza@gmail.com</p>
+        </div>
+        <div class="contact-icons-container">
+          <a href="" class="contact-Icons"
+            ><i class="bi bi-whatsapp contact-icons-icons"></i>
+            <div class="contact-icons-background"></div>
+          </a>
+          <a href="" class="contact-Icons"
+            ><i class="bi bi-envelope-at-fill contact-icons-icons"></i>
+            <div class="contact-icons-background"></div
+          ></a>
+          <a href="" class="contact-Icons"
+            ><i class="bi bi-linkedin contact-icons-icons"></i>
+            <div class="contact-icons-background"></div
+          ></a>
+        </div>
+        
+      </div>
+      <div class="right-side">
+        <form action="" class="formulario-contacto">
+           <label for="nombre" class="etiquetas-formulario">NAME</label>
+          <input type="text" name="nombre" placeholder="What is your name?" class="input-formulario">
+           <label for="emailmensaje" class="etiquetas-formulario">EMAIL ADDRESS</label>
+          <input type="email" name="emailmensaje" placeholder="And your email address?" class="input-formulario">
+           <label for="mensaje" class="etiquetas-formulario">MESSAGE</label>
+          <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Write your message..." class="input-formulario"></textarea>
+          <input type="submit" value="Submit" class="submit-formulario">
+        </form>
+      </div>
+      <div class="contactGradient"></div>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/a429b037b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
