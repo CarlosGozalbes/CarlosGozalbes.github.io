@@ -39,8 +39,11 @@ const handleRightClick = () => {
 /* -- Mobile Nav Toggle -- */
 
 const nav = document.querySelector("nav");
-
+const toggleIcon = document.querySelector(".toggle-icon");
 const handleNavToggle = () => {
+   toggleIcon.classList.toggle("fa-bars");
+   toggleIcon.classList.toggle("fa-times");
+   toggleIcon.classList.toggle("rotate");
   nav.dataset.transitionable = "true";
 
   nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";

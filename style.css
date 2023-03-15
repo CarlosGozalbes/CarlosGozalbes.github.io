@@ -22,8 +22,9 @@ h1, h2, h3, a, p, span, label {
   /* font-family: "Rubik", sans-serif; */
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  color: white;
+  color: rgb(167, 167, 167);
   margin: 0px;
+  
 }
 
 a {
@@ -38,7 +39,7 @@ nav {
   display: flex;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
-  z-index: 3;
+  z-index: 5;
   background-color: rgb(6, 11, 25);
 }
 
@@ -98,6 +99,9 @@ nav .nav-section {
 
 #nav-logo-section > a > i {
   font-size: 2.5rem;
+}
+.navbar-icons{
+  font-size: 1.5rem !important;
 }
 
 #nav-link-section {
@@ -237,11 +241,13 @@ main > article > .article-nav-section > .article-nav-button {
   color: rgba(255, 255, 255, 0.75);
   font-size: 3rem;
   cursor: pointer;
+  
 }
 
-main > article > .article-nav-section > .article-nav-button:hover {
+main > article > .article-nav-section:hover > .article-nav-button:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
+
 
 main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   border-left: 1px solid var(--border-color);
@@ -389,17 +395,44 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   main > article > .article-description-section > p {
     font-size: 1rem;
   }
+  
+  
+  
 }
 
-/* -- YT link / Source link styles -- */
-
-main > article > .article-description-section > p  > .source-link {
-  color: var(--highlight-color);
-  display: inline;
+/* .left-icon {
+  transition: transform 0.3s ease-in-out !important;
 }
 
-main > article .yt-link,
-main > article .yt-link > i {
-  color: var(--yt-color);
-  display: inline;
+
+.article-nav-button-left:hover .left-icon {
+  transform: translateX(-20px) !important;
+} */
+.article-nav-button {
+  display: flex; justify-content:center; align-items: center;
+}
+
+.left-icon {
+ transition: transform 0.5s ease-in-out;
+ 
+}
+.right-icon{
+  transition: transform 0.5s ease-in-out;
+}
+.article-nav-button-left:hover .left-icon{
+ transform: translateX(-20px);
+ color: rgb(135,113,220);
+}
+
+.article-nav-button-right:hover .right-icon {
+  transform: translateX(20px);
+ color: rgb(135,113,220);
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotate {
+  transform: rotate(180deg);
 }
