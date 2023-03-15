@@ -1,52 +1,29 @@
-const track = document.getElementById("image-track");
-
-const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
-
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = "0";
-  track.dataset.prevPercentage = track.dataset.percentage;
-};
-
-const handleOnMove = (e) => {
-  if (track.dataset.mouseDownAt === "0") return;
-
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-    maxDelta = window.innerWidth / 2;
-
-  const percentage = (mouseDelta / maxDelta) * -100,
-    nextPercentageUnconstrained =
-      parseFloat(track.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
-  track.dataset.percentage = nextPercentage;
-
-  track.animate(
-    {
-      transform: `translate(${nextPercentage}%, -50%)`,
-    },
-    { duration: 1200, fill: "forwards" }
-  );
-
-  for (const image of track.getElementsByClassName("image")) {
-    image.animate(
+$(document).ready(function () {
+  if (
+    !$("#myCanvas").tagcanvas(
       {
-        objectPosition: `${100 + nextPercentage}% center`,
+        //textColour: '#ff0000',
+        outlineColour: "transparent",
+        cursor: "initial",
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.05,
+        textFont: null,
+        textColour: null,
+        weightMode: "both",
+        weight: true,
+        weightGradient: {
+          0: "rgb(135,113,220)", // red
+          0.5: "#FF77A1", // yellow
+          //0.66: '#0f0', // green
+          1: "#F9F871", // blue
+        },
       },
-      { duration: 1200, fill: "forwards" }
-    );
+      "tags"
+    )
+  ) {
+    // something went wrong, hide the canvas container
+    $("#myCanvasContainer").hide();
   }
-};
-
-/* -- Had to add extra lines for touch events -- */
-
-window.onmousedown = (e) => handleOnDown(e);
-
-window.ontouchstart = (e) => handleOnDown(e.touches[0]);
-
-window.onmouseup = (e) => handleOnUp(e);
-
-window.ontouchend = (e) => handleOnUp(e.touches[0]);
-
-window.onmousemove = (e) => handleOnMove(e);
-
-window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+});
+//To change the color of text randomly
