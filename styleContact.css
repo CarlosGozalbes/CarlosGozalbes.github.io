@@ -36,6 +36,7 @@ h1, h2, h3, a, p, span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 .tituloh1{
     font-family: sequel;
@@ -152,14 +153,25 @@ h1, h2, h3, a, p, span {
     background-color: rgb(6, 11, 25);
     width: 40%;
     padding: 7rem 7rem;
+    
 }
 
 .formulario-contacto {
  height: 100%;
 display: flex;
 flex-direction: column;
- 
+ animation: drop-in 1200ms ease 500ms backwards;
 
+}
+@keyframes drop-in {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
 }
 
 .etiquetas-formulario {

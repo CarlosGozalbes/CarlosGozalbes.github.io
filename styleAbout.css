@@ -80,8 +80,17 @@ font-family: sequel;
     font-size: 7rem;
     color: white;
     line-height: 6rem;
-    max-width: 15ch;
+    max-width: 15ch; animation: drop-in 1200ms ease 500ms backwards;
 }
+@keyframes drop-in {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }}
 .about-section{
     overflow-y: scroll;
     overflow-x: hidden;
@@ -106,7 +115,7 @@ font-family: sequel;
     margin-bottom: 2rem;
     width: fit-content;
     font-weight: 500;
-    
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 
 .face {
@@ -121,6 +130,7 @@ font-family: sequel;
   display: flex;
   justify-content: center;
   align-items: center;
+   animation: drop-in 1200ms ease 500ms backwards;
 }
 .face::before {
   content: "";
@@ -172,6 +182,7 @@ font-family: sequel;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 .apagalaradio{
     max-width: 50ch;
@@ -181,6 +192,7 @@ font-family: sequel;
     
     background-color: rgb(6, 11, 25);
     width: 40%;
+    animation: drop-in 1200ms ease 500ms backwards;
    
 }
 .header::-webkit-scrollbar {
@@ -241,7 +253,10 @@ font-family: sequel;
     !important;
     width: 8ch !important;
     line-height: 2.5rem;
+   
   }
+  
+
     .header-about {
     flex-direction: column;
     
@@ -312,178 +327,15 @@ font-family: sequel;
     width: 100%;
     height: 500px;
 }
-
-#cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 8px;  
-  max-width: calc(100% - 20px);
-  width: calc(100% - 20px);
-  margin: auto;
-}
-
-#cards:hover > .card::after {
-  opacity: 1;
-}
-
-.card {
-  background-color: transparent;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  height: 260px;
-  flex-direction: column;
-  position: relative;
-  width: 300px;  
-}
-
-.card:hover::before {
-  opacity: 1;
-}
-
-.card::before,
-.card::after {
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: opacity 500ms;
-  width: 100%;
-}
-
-.card::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.06),
-    transparent 40%
-  );
-  z-index: 3;
-}
-
-.card::after {  
-  background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.4),
-    transparent 40%
-  );
-  z-index: 1;
-}
-
-.card > .card-content {
-  background-color: transparent;
-  border-radius: inherit;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  inset: 1px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-}
-
-/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
-
-
-
-
-
-.card-image {
-  object-fit: cover;
-  
-  display: flex;
-  height: 140px;
-  justify-content: center;
-  overflow: hidden;
-}
-
-
-.card-info-wrapper {
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-start;
-  padding: 0px 20px;
-}
-
-.card-info {
-  align-items: flex-start;
-  display: flex;
-  gap: 10px;
-}
-
-.card-info > i {  
-  font-size: 1em;
-  height: 20px;
-  line-height: 20px;
-}
-
-.card-info-title > h3 {
-  font-size: 1.1em;
-  line-height: 20px;
-}
-
-.card-info-title > h4 {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.85em;
-  margin-top: 8px;
-}
-
-/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
-
-@media(max-width: 1000px) {
-  body {
-    align-items: flex-start;  
-    overflow: auto;
-  }
-  
-  #cards {    
-    max-width: 1000px;
-    padding: 10px 0px;
-  }
-  
-  .card {
-    flex-shrink: 1;
-    width: calc(50% - 4px);
-  }
-}
-
-@media(max-width: 500px) {
-  .card {
-    height: 180px;
-  }
-  
-  .card-image {
-    height: 80px;  
-  }
-  
-  .card-image > i {
-    font-size: 3em;
-  }
+.badger-class-ABOUT {
+    color: rgb(135,113,220);
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    border: solid 1px;
+    border-color: #9d84ff;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+    width: fit-content;
+    font-weight: 500;
     
-  .card-info-wrapper {
-    padding: 0px 10px;
-  }
-  
-  .card-info > i { 
-    font-size: 0.8em; 
-  }
-  
-  .card-info-title > h3 {
-    font-size: 0.9em;
-  }
-
-  .card-info-title > h4 {
-    font-size: 0.8em;
-    margin-top: 4px;
-  }
-}
-
-@media(max-width: 320px) {
-  .card {
-    width: 100%;
-  }
 }
