@@ -293,3 +293,143 @@ body.menu-toggled > .meta-link > span {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
+.sinpadding {
+  padding: 0 !important;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 3rem 4rem;
+
+}
+.contact p {
+  transition: transform 0.5s ease;
+}
+.contact:hover p {
+  color:white;
+  transform: translateY(-20px);
+}
+.mano-saludo {
+  width: fit-content;
+  color: rgb(167, 167, 167);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.5s ease;
+}
+.contact:hover .mano-saludo {
+  color:white;
+  transform: translateY(-20px) rotate(45deg) ;
+  
+}
+
+.work-left-bottom {
+  color: white;
+  font-family: sequel;
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  
+}
+.about-go-section {
+  padding: 0 !important;
+}
+.about-left-bottom {
+  color: white;
+  font-family: sequel;
+  font-size: 3rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.work-content-wrapper {
+  color: white;
+  font-family: sequel;
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+position: relative;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.go-work-first h4 {
+  margin: 0;
+}
+.go-work-second h4 {
+  margin: 0;
+}
+.go-work-first {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  transition: transform 0.7s ease;
+}
+.go-work-second {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  position: absolute;  
+  transform: translateY(50px);
+
+  transition: transform 0.7s ease;
+}
+
+.work-left-bottom:hover .go-work-first{
+  transform: translateY(-50px);
+}
+.work-left-bottom:hover .go-work-second{
+ transform: translateY(0px);
+}
+
+.about-left-bottom:hover .cruz-about {
+  transform: rotate(-45deg) translateX(-13px) translateY(-13px);
+}
+.cruz-about {
+  font-size: 6rem;
+  height: fit-content;
+  transform: rotate(45deg);
+  transition: transform 0.7s ease;
+  
+}
+
+.go-about-wrapper {
+  position: relative;
+  height: fit-content;
+  width: 9ch;
+  overflow: hidden;
+}
+.go-about-first {
+  transition: transform 0.7s ease;
+}
+
+.go-about-second {
+  position: absolute;
+  transition: transform 0.7s ease;
+}
+
+.about-left-bottom:hover .go-about-first {
+  transform: translateY(-135px);
+}
+.about-left-bottom:hover .go-about-second {
+  transform: translateY(-135px);
+}
