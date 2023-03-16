@@ -433,3 +433,26 @@ position: relative;
 .about-left-bottom:hover .go-about-second {
   transform: translateY(-135px);
 }
+
+.about-go-section:hover nav {
+  background-color: white !important;
+  color: black !important;
+}
+
+@media only screen and (max-width: 570px) {
+  .animacion-figuras{
+    /* height: 200px !important; */
+  }
+  .about-left-bottom {
+    font-size: 1rem !important;
+  }
+  .cruz-about {
+    font-size: 2rem;
+  }
+  .contact {
+    padding: 1rem;
+    width: 35ch;
+    
+  }
+  
+}
