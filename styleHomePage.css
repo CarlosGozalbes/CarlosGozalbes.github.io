@@ -3,7 +3,7 @@
   src: url(./assets/sequel-100-black-85.ttf);
 }
 #wrapper {
-  
+  overflow: hidden;
   width: 100%;
   position: relative;
 }

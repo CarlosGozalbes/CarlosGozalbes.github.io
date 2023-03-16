@@ -251,17 +251,27 @@ flex-direction: column;
 }
 }
 @media only screen and  (max-width: 700px) {
-    .header {
-        padding-left: 1rem;
-    }
+    
     .badger-class{
         margin-bottom: 3rem;
+        margin-left: 1rem;
     }
     .header h1 {
         font-size: 4rem;
+        padding-left: 1rem;
     }
     .right-side {
         padding-right: 1rem;
+        padding-left: 1rem;
     }
-    
+    .contact-icons-container {
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .header {
+        padding-left: 0;
+    }
+    .email-container{
+        padding-left: 1rem;
+    }
 }
