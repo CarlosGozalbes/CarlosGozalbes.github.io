@@ -19,10 +19,13 @@
     />
   </head>
   <body>
+    <!-- <div id="trailer">
+      <i id="trailer-icon" class="fa-solid fa-arrow-up-right"></i>
+    </div> -->
     <nav data-toggled="false" data-transitionable="false" id="nav">
       <div id="nav-logo-section" class="nav-section">
         <a href="./index.html" style="padding-left: 4rem">
-          <i class="fa-solid fa-landmark"></i>
+          <i class="fa-solid fa-landmark interactable"></i>
         </a>
       </div>
       <div id="nav-mobile-section">
@@ -68,43 +71,59 @@
           <div class="shape"></div>
           <div class="shape"></div>
         </div>
-        <div class="article-description-section article-section sinpadding" id="saludoContacto">
+        <div
+          class="article-description-section article-section sinpadding"
+          id="saludoContacto"
+        >
           <a href="./contact.html" class="contact">
             <i class="fa-regular fa-hand mano-saludo"></i>
-          <p>
-            Hi, I am Carlos Gozalbes Mendoza. A junior web developer interested
-            in frontend, and excited to see the amazing things I can learn to
-            create.
-          </p></a>
+            <p>
+              Hi, I am Carlos Gozalbes Mendoza. A junior web developer
+              interested in frontend, and excited to see the amazing things I
+              can learn to create.
+            </p></a
+          >
         </div>
         <div class="article-title-section article-section about-go-section">
-          <a href="./about.html" class="about-left-bottom" id="about-left-bottom">
-           <div class="go-about-wrapper">
-            <div class="go-about-first" id="go-about-first">
-            WEB DEVELOPER
-           </div>
-           <div class="go-about-second" id="go-about-second">
-            FRONTEND DEVELOPER
-           </div>
+          <a
+            href="./about.html"
+            class="about-left-bottom"
+            id="about-left-bottom"
+          >
+            <div class="go-about-wrapper">
+              <div class="go-about-first" id="go-about-first">
+                WEB DEVELOPER
+              </div>
+              <div class="go-about-second" id="go-about-second">
+                FRONTEND DEVELOPER
+              </div>
             </div>
             <i class="bi bi-x-lg cruz-about" id="cruz-about"></i>
-            </a
-          >
+          </a>
         </div>
-        <div class="article-nav-section article-section responsive-work" id="goWorkFromIndex">
+        <div
+          class="article-nav-section article-section responsive-work"
+          id="goWorkFromIndex"
+        >
           <a href="./work.html" class="work-left-bottom" id="work-left-bottom">
-           <div class="work-content-wrapper">
-            <div class="go-work-first">
-              <h4 id="workTitulo">WORK</h4>
-              <i class="fa-solid fa-arrow-right" style="margin-top: 0.4rem" id="iconoFlechaWork"></i>
+            <div class="work-content-wrapper">
+              <div class="go-work-first">
+                <h4 id="workTitulo">WORK</h4>
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-top: 0.4rem"
+                  id="iconoFlechaWork"
+                ></i>
+              </div>
+              <div class="go-work go-work-second">
+                <h4>WORK</h4>
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-top: 0.4rem"
+                ></i>
+              </div>
             </div>
-            <div class="go-work go-work-second">
-              <h4>WORK</h4>
-              <i class="fa-solid fa-arrow-right" style="margin-top: 0.4rem"></i>
-            </div>
-            </div>
-            </a
-          >
+          </a>
         </div>
       </article>
     </main>
@@ -115,5 +134,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="./scriptLinkNavbar.js"></script>
+    <!-- <script src="./scriptMouseTrailer.js"></script> -->
   </body>
 </html>
