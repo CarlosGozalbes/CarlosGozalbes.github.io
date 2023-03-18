@@ -9,6 +9,9 @@ h1, h2, h3, a, p, span {
   color: rgb(167, 167, 167);;
   margin: 0px;
 }
+.header::-webkit-scrollbar {
+  display: none;
+}
 
 .header {
     display: flex;
@@ -152,13 +155,18 @@ h1, h2, h3, a, p, span {
     z-index: 3;
     background-color: rgb(6, 11, 25);
     width: 40%;
-    padding: 7rem 7rem;
-    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  min-height: 300px;
 }
 
 .formulario-contacto {
- height: 100%;
+ 
 display: flex;
+margin-top: auto;
+margin-bottom: auto;
+width: 70%;
 flex-direction: column;
  animation: drop-in 1200ms ease 500ms backwards;
 
@@ -182,6 +190,7 @@ flex-direction: column;
     margin-bottom: 0.5rem;
 }
 
+
 .input-formulario{
     background-color: hsla(0, 0%, 100%, 0.04);
     color: white;
@@ -203,7 +212,9 @@ flex-direction: column;
    outline: none; 
     
 }
-
+.formulario-contacto{
+    
+}
 
 .submit-formulario {
     background-color: hsla(0, 0%, 100%, 0.04);
@@ -234,8 +245,9 @@ flex-direction: column;
   }
 
   .right-side {
+    align-self: flex-start;
     padding-left: 0;
-    width: 100%;
+    width: 60%;
     order: 2 /* Change order of right-side to appear before left-side */
   }
   .contactGradient {
@@ -254,11 +266,14 @@ flex-direction: column;
     
     .badger-class{
         margin-bottom: 3rem;
-        margin-left: 1rem;
+        margin-left: 4.6rem;
+        align-self: start;
     }
     .header h1 {
         font-size: 4rem;
-        padding-left: 1rem;
+        
+        align-self: center;
+        text-align: center;
     }
     .right-side {
         padding-right: 1rem;
@@ -273,5 +288,11 @@ flex-direction: column;
     }
     .email-container{
         padding-left: 1rem;
+        align-self: center;
+    }
+
+    .left-side {
+        
+       
     }
 }

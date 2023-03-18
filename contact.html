@@ -22,7 +22,7 @@
   <body>
     <nav data-toggled="false" data-transitionable="false">
       <div id="nav-logo-section" class="nav-section">
-        <a href="./index.html" style="padding-left: 4rem;">
+        <a href="./index.html" >
           <i class="fa-solid fa-landmark "></i>
         </a>
       </div>
@@ -75,18 +75,27 @@
         
       </div>
       <div class="right-side">
-        <form action="" class="formulario-contacto">
+        <form  action="" class="formulario-contacto" id="contact-form" >
            <label for="nombre" class="etiquetas-formulario">NAME</label>
-          <input type="text" name="nombre" placeholder="What is your name?" class="input-formulario">
+          <input type="text" id="nombre" name="nombre" placeholder="What is your name?" class="input-formulario">
            <label for="emailmensaje" class="etiquetas-formulario">EMAIL ADDRESS</label>
-          <input type="email" name="emailmensaje" placeholder="And your email address?" class="input-formulario">
+          <input type="email" id="emailmensaje" name="emailmensaje" placeholder="And your email address?" class="input-formulario">
            <label for="mensaje" class="etiquetas-formulario">MESSAGE</label>
-          <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Write your message..." class="input-formulario"></textarea>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Write your message..." class="input-formulario"></textarea>
           <input type="submit" value="Submit" class="submit-formulario">
         </form>
+        <div id="thank-you-message" style="display: none;">
+   <p>Thanks for your message I'll get back to you shortly :)
+</p> 
+</div>
       </div>
       <div class="contactGradient"></div>
     </header>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script src="./env.js">
+   
+   
+</script>
     <script
       src="https://kit.fontawesome.com/a429b037b3.js"
       crossorigin="anonymous"

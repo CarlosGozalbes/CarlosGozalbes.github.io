@@ -4,7 +4,7 @@
 }
 .header-about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 2rem;
 }
 .image-container {
@@ -78,10 +78,12 @@ backdrop-filter: blur(6.9px);
 .tituloh1about {
 font-family: sequel;
     font-weight: 400;
-    font-size: clamp(2rem,7rem,7rem);
+    font-size: 6.5rem;
     color: white;
     line-height: 6rem;
-    max-width: 15ch; animation: drop-in 1200ms ease 500ms backwards;
+    width: 80% ;
+    align-self: start; 
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 @keyframes drop-in {
  from {
@@ -104,8 +106,9 @@ font-family: sequel;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding:6rem 6rem;
-}
+    padding:5.6rem 5.6rem;
+} 
+
 
 .badger-class-ABOUT {
     color: rgb(135,113,220);
@@ -217,7 +220,7 @@ font-family: sequel;
     margin-bottom: 2rem;
     width: fit-content;
     font-weight: 500;
-    
+    margin-left: 1rem;
 }
 
 .tagcloud {
@@ -240,6 +243,13 @@ font-family: sequel;
     align-items: center;
     margin-bottom: 4rem;
   }
+@media only screen and (max-width: 1400px) {
+.tituloh1about {
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .face {
     display: none;
@@ -248,6 +258,7 @@ font-family: sequel;
     padding-left: 6rem;
     padding-top: 3rem;
   }
+  
   
     .header-about {
         display: flex;
@@ -268,6 +279,8 @@ font-family: sequel;
   }
   .tituloh1about {
     font-size: 4rem;
+    align-self: center;
+    
   }
   .skills-container {
     flex-direction: column;
@@ -299,16 +312,20 @@ font-family: sequel;
     display: none;
   }
   .about-header {
-    padding-left: 6rem;
-    padding-top: 3rem;
+    padding: 3rem 2rem;
+    
   }
   
     .header-about {
+      padding-left: 1rem;
+      padding-right: 1rem;
     flex-direction: column;
     align-items: center;
   }
   .tituloh1about {
-    font-size: 2rem;
+    font-size: 3rem;
+    width: 100% !important;
+    line-height: normal;
   }
 
   .left-side-about {
@@ -322,7 +339,7 @@ font-family: sequel;
   }
   .right-side-about {
     padding-left: 0;
-    padding-right: 1rem;
+    
      padding-bottom: 2rem;
       padding-top: 0rem;
     flex-basis: 100%;
@@ -334,5 +351,11 @@ font-family: sequel;
   .skill-badge{
     margin-bottom: 3rem;
   }
-  
+  .skills-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #myCanvas {
+    width: 100%;
+  }
 }
