@@ -28,6 +28,7 @@
   border-top-left-radius: 1000rem;
   border-top-right-radius: 1000rem;
   overflow: hidden;
+  
 }
 .image-container img {
   filter: sepia(60%);

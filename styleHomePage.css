@@ -459,17 +459,26 @@ position: relative;
   left: 50%;
   transform: translate(-50%, -100%);
   z-index: 7;
+  border-radius: 50%;
+
   color: white;
   background: none;
   border: none;
   outline: none;
-  
+  padding: 20px 27px;
   
   text-transform: uppercase;
-  font-size: 4rem
+  font-size: 3rem
   ;
   cursor: pointer;
+} 
+
+.btn:hover .homepageintroicon {
+  
+  
+  text-shadow: 0 0 5px #ffffff;
 }
+
 
 
 
@@ -513,4 +522,64 @@ display: none;
 .text-container {
   display: none;
 }
+}
+
+
+
+ 
+.demo {
+  width: 100px;
+  height: 102px;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  animation: spin 5s infinite linear;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.circle:nth-of-type(1) {
+  transform: rotate(0deg) translateX(5px);
+}
+
+.circle:nth-of-type(2) {
+  transform: rotate(70deg) translateY(5px);
+}
+
+.circle:nth-of-type(3) {
+  transform: rotate(140deg) translateY(-5px);
+}
+
+.circle:nth-of-type(4) {
+  transform: rotate(210deg) translateX(-5px);
+}
+
+.circle:nth-of-type(5) {
+  transform: rotate(280deg);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  border-right: none;
+  border-top: none;
+  background-clip: padding;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.15);
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
