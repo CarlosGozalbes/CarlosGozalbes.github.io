@@ -434,7 +434,7 @@ position: relative;
   transform: translateY(-135px);
 }
 .about-left-bottom:hover .go-about-second {
-  transform: translateY(-135px);
+  transform: translateY(-105px);
 }
 
 @media only screen and (max-width: 570px) {
