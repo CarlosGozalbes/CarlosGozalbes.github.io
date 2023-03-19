@@ -119,8 +119,11 @@ main {
   flex-grow: 1;
   position: relative;
   overflow: hidden;
-}
 
+}
+main::-webkit-scrollbar {
+  display: none;
+}
 main > article {
   height: 100%;
   width: 100%;
@@ -130,7 +133,8 @@ main > article {
   position: absolute;
   left: 0px;
   top: 0px;
-  transition: transform 400ms ease;  
+  transition: transform 400ms ease; 
+   
 }
 
 main > article[data-status="inactive"] {
@@ -250,7 +254,10 @@ main > article > .article-nav-section:hover > .article-nav-button:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
 
-
+.project-Icon {
+  color:white !important;
+  font-size: 6rem !important;
+}
 main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   border-left: 1px solid var(--border-color);
 }
@@ -258,6 +265,10 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 @media(max-width: 1200px) {    
   #nav-mobile-section {
     flex-basis: calc(100% * 0.75);
+  }
+  .project-Icon {
+font-size: 4rem !important;
+color:white !important;
   }
 
   #nav-logo-section {
@@ -313,7 +324,11 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   }
 }
 
-@media(max-width: 800px) {  
+@media(max-width: 800px) { 
+   .project-Icon {
+font-size: 2rem !important;
+color:white !important;
+  } 
   nav {
     justify-content: space-between;  
   }
@@ -379,6 +394,11 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   main > article > .article-title-section {
     padding: 2rem;
   }
+    main > article > .article-nav-section {
+    padding: 0rem;
+    height: 55px ;
+  }
+  
   
   main > article > .article-title-section > h2 {
     flex-basis: 70%;
