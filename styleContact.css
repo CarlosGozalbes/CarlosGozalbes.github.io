@@ -286,7 +286,7 @@ flex-direction: column;
     order: 1; /* Change order of left-side to appear after right-side */
   }
 .badger-class{
-  align-self: start;
+  align-self: start;margin-left: 4.6rem;
 }
   .right-side {
     width: 100%;
