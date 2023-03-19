@@ -7,6 +7,21 @@
     justify-content: center;
     padding-bottom: 2rem;
 }
+.skill-badge{
+    color: rgb(135,113,220);
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    border: solid 1px;
+    border-color: #9d84ff;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: fit-content;
+    font-weight: 500;
+    align-self: flex-start;
+    animation: drop-in 1200ms ease 500ms backwards;
+    margin-left: 7rem ;
+  }
 .image-container {
   position: relative;
   width: fit-content;
@@ -124,6 +139,42 @@ font-family: sequel;
     animation: drop-in 1200ms ease 500ms backwards;
 }
 
+
+.left-side-about {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drop-in 1200ms ease 500ms backwards;
+}
+.apagalaradio{
+    max-width: 50ch;
+}
+
+.right-side-about {
+    flex-basis: 40%;
+    background-color: rgb(6, 11, 25);
+    display: flex;
+    justify-content: center;
+    animation: drop-in 1200ms ease 500ms backwards;
+   
+}
+.header::-webkit-scrollbar {
+  display: none;
+}
+.left-side-skills{
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.right-side-skills{
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .face {
   position: absolute;
   top: 60px;
@@ -187,29 +238,6 @@ font-family: sequel;
   background: #333;
   border-radius: 50%;
 }
-.left-side-about {
-    flex-basis: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: drop-in 1200ms ease 500ms backwards;
-}
-.apagalaradio{
-    max-width: 50ch;
-}
-
-.right-side-about {
-    flex-basis: 48%;
-    background-color: rgb(6, 11, 25);
-    display: flex;
-    justify-content: center;
-    animation: drop-in 1200ms ease 500ms backwards;
-   
-}
-.header::-webkit-scrollbar {
-  display: none;
-}
-
 .badger-class-ABOUT {
     color: rgb(135,113,220);
     font-size: 1.2rem;
@@ -239,18 +267,18 @@ font-family: sequel;
   .skills-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
   }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1470px) {
 .tituloh1about {
     font-size: 4rem;
     align-self: flex-start;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1210px) {
   .face {
     display: none;
   }
@@ -280,6 +308,7 @@ font-family: sequel;
   .tituloh1about {
     font-size: 4rem;
     align-self: center;
+    width: 85%;
     
   }
   .skills-container {
@@ -328,6 +357,9 @@ font-family: sequel;
     line-height: normal;
   }
 
+  .badger-class-ABOUT {
+    margin-left: 3.6 !important;
+  }
   .left-side-about {
     padding-top: 0;
     padding-bottom: 2rem;
@@ -350,11 +382,15 @@ font-family: sequel;
   }
   .skill-badge{
     margin-bottom: 3rem;
+    margin-left: 3rem;
   }
   .skills-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .skills-container > .left-side-skills{
+  padding-left: 0rem !important;
+}
   #myCanvas {
     width: 100%;
   }

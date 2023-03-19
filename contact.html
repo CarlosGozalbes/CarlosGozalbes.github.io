@@ -75,14 +75,16 @@
         
       </div>
       <div class="right-side">
-        <form  action="" class="formulario-contacto" id="contact-form" >
+        <form  action=""  class="formulario-contacto" id="contact-form"  >
            <label for="nombre" class="etiquetas-formulario">NAME</label>
-          <input type="text" id="nombre" name="nombre" placeholder="What is your name?" class="input-formulario">
+          <input type="text" required id="nombre" name="nombre" placeholder="What is your name?" class="input-formulario">
            <label for="emailmensaje" class="etiquetas-formulario">EMAIL ADDRESS</label>
-          <input type="email" id="emailmensaje" name="emailmensaje" placeholder="And your email address?" class="input-formulario">
+          <input type="email" required id="emailmensaje" name="emailmensaje" placeholder="And your email address?" class="input-formulario">
            <label for="mensaje" class="etiquetas-formulario">MESSAGE</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Write your message..." class="input-formulario"></textarea>
-          <input type="submit" value="Submit" class="submit-formulario">
+          <textarea name="mensaje" required id="mensaje" cols="30" rows="10" placeholder="Write your message..." class="input-formulario"></textarea>
+          <p id="error-message" style="color: rgb(165, 12, 12); margin-bottom: 0.5rem;display: none;">There was an error, reload and try again or choose another method to contact me</p>
+          <input type="submit" value="Submit" class="submit-formulario" id="submit-formulario"> 
+          <div class="lds-dual-ring" id="lds-dual-ring"></div>
         </form>
         <div id="thank-you-message" style="display: none;">
    <p>Thanks for your message I'll get back to you shortly :)

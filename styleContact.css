@@ -28,11 +28,56 @@ h1, h2, h3, a, p, span {
     border: solid 1px;
     border-color: #9d84ff;
     border-radius: 40px;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     width: fit-content;
     font-weight: 500;
     
+
 }
+.submit-formulario {
+    background-color: hsla(0, 0%, 100%, 0.04);
+    color: white;
+    border: 1px solid #9d84ff;
+    padding: 1rem 1.6rem;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    
+}
+.lds-dual-ring {
+  
+  display: none;
+ align-self: center;
+
+  width: 30px;
+  height: 30px;
+}
+.lds-dual-ring:after {
+  
+  
+    content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  
+  border-radius: 50%;
+  border: 6px solid #9d84ff;
+  border-color: #9d84ff transparent #9d84ff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .left-side {
     width: 60%;
@@ -216,17 +261,7 @@ flex-direction: column;
     
 }
 
-.submit-formulario {
-    background-color: hsla(0, 0%, 100%, 0.04);
-    color: white;
-    border: 1px solid #9d84ff;
-    padding: 1rem 1.6rem;
-    border-radius: 1rem;
-    transition: 0.5s ease;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-}
+
 .submit-formulario:hover {
     background-color: #9d84ff;
     
@@ -236,19 +271,32 @@ flex-direction: column;
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-left: 0;
+   
+  }
+  .tituloh1 {
+    text-align: center;
   }
 
   .left-side {
     padding-top: 7rem;
+    padding-bottom: 7rem;
     width: 100%;
+    align-items: center;
     order: 1; /* Change order of left-side to appear after right-side */
   }
 
   .right-side {
-    align-self: flex-start;
+    width: 100%;
+    
+    align-items: center;
     padding-left: 0;
-    width: 60%;
+    
     order: 2 /* Change order of right-side to appear before left-side */
+  }
+  .formulario-contacto {
+    width: 50%;
+    padding-bottom: 4rem;
   }
   .contactGradient {
     position: absolute;
@@ -263,7 +311,11 @@ flex-direction: column;
 }
 }
 @media only screen and  (max-width: 700px) {
-    
+    .formulario-contacto {
+    width: 90%;
+    padding-bottom: 4rem;
+  }
+
     .badger-class{
         margin-bottom: 3rem;
         margin-left: 4.6rem;
