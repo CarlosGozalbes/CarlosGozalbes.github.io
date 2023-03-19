@@ -8,7 +8,9 @@ console.log(navLinks)
 navLinks.forEach((link) => {
   // Get the linked page's filename
   const linkedPage = link.getAttribute("href").split("/").pop();
-  
+  if (currentPage === "" && linkedPage === index.html) {
+    link.classList.add("active");
+  }
   // If the current page matches the linked page, add the 'active' class to the link
   if (currentPage === linkedPage) {
     link.classList.add("active");
