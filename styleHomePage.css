@@ -478,6 +478,13 @@ position: relative;
   
   text-shadow: 0 0 5px #ffffff;
 }
+.btn:hover .inner {
+   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
+              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
+              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
+              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
+              inset 0px 0px 5px rgba(255, 255, 255, 0.7);
+              }
 
 
 
@@ -544,19 +551,19 @@ display: none;
 }
 
 .circle:nth-of-type(1) {
-  transform: rotate(0deg) translateX(5px);
+  transform: rotate(0deg) translateX(7px);
 }
 
 .circle:nth-of-type(2) {
-  transform: rotate(70deg) translateY(5px);
+  transform: rotate(70deg) translateY(7px);
 }
 
 .circle:nth-of-type(3) {
-  transform: rotate(140deg) translateY(-5px);
+  transform: rotate(140deg) translateY(-7px);
 }
 
 .circle:nth-of-type(4) {
-  transform: rotate(210deg) translateX(-5px);
+  transform: rotate(210deg) translateX(-7px);
 }
 
 .circle:nth-of-type(5) {
