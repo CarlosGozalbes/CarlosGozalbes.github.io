@@ -97,7 +97,7 @@
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 <script >
    (function () {
-  emailjs.init("${{secrets.EMAILJS_API}}"); // Replace with your EmailJS user ID
+  emailjs.init(secrets.EMAILJS_API); // Replace with your EmailJS user ID
 
   document
     .getElementById("contact-form")
@@ -113,7 +113,7 @@
       const message = document.getElementById("mensaje").value;
 
       // Send email
-      emailjs.send("${{secrets.EMAILJS_SERVICE}}", "${{secrets.EMAILJS_TEMPLATE}}", {
+      emailjs.send(secrets.EMAILJS_SERVICE, secrets.EMAILJS_TEMPLATE, {
           name: name,
           email: email,
           message: message,
