@@ -18,6 +18,5 @@ jobs:
           EMAILJS_API: ${{ secrets.EMAILJS_API }}
           EMAILJS_SERVICE: ${{ secrets.EMAILJS_SERVICE }}
           EMAILJS_TEMPLATE: ${{ secrets.EMAILJS_TEMPLATE }}
-          BRANCH: gh-pages
-          FOLDER: public
-          BUILD_SCRIPT: yarn && yarn run build
+          
+          
