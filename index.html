@@ -45,7 +45,8 @@
     <div class="inner"></div>
   </div>
 </div>
-        <i class="fa-solid fa-landmark homepageintroicon"></i>
+        <i class="fa-solid fa-landmark homepageintroicon" id="homepageintroicon"></i>
+        <p class="homepageintroicon" id="clickme" style="display: none;">Click me</p>
       </button>
       <div class="text-container" id="text-container"></div>
       <div class="text-wrapper" id="text-wrapper">
@@ -286,18 +287,16 @@
           delay: (el, i) => 7000 + 40 * i,
         }); */
       });
-  /*      window.onload = function() {
+      window.onload = function() {
     setTimeout(function() {
-      let btn = document.querySelector('.btn');
-      if (!btn.clicked) {
-        btn.click();
-      }
-    }, 5000);
-  } */
+      let icon = document.getElementById('homepageintroicon');
+      icon.style.display = 'none';
+      let  texto = document.getElementById('clickme');
+      texto.style.display = ""
+    }, 10000); // 5 seconds delay
+  };
     </script>
-    <script>
- 
-</script>
+   
     <!-- <script src="./scriptMouseTrailer.js"></script> -->
   </body>
 </html>

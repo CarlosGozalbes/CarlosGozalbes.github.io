@@ -590,3 +590,7 @@ display: none;
     transform: rotate(360deg);
   }
 }
+
+#clickme {
+  color: white; text-transform: none; font-size: 1rem;
+}
