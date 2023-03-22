@@ -287,6 +287,16 @@
         }); */
       });
     </script>
+    <script>
+  window.onload = function() {
+    setTimeout(function() {
+      let btn = document.querySelector('.btn');
+      if (!btn.clicked) {
+        btn.click();
+      }
+    }, 4000);
+  }
+</script>
     <!-- <script src="./scriptMouseTrailer.js"></script> -->
   </body>
 </html>
