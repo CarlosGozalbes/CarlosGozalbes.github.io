@@ -5,21 +5,23 @@ const animateTrailer = (e, interacting) => {
     y = e.clientY - trailer.offsetHeight / 2;
 
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`,
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 3 : 1})`,
   };
 
   trailer.animate(keyframes, {
-    duration: 800,
+    duration: 500,
     fill: "forwards",
   });
 };
 
 const getTrailerClass = (type) => {
   switch (type) {
-    case "video":
-      return "fa-solid fa-play";
+    case "work":
+      return trailer.innerHTML = "WORK";
+    case "":
+       return (trailer.innerHTML = "");
     default:
-      return "fa-solid fa-arrow-up-right";
+      return (trailer.innerHTML = "");
   }
 };
 
@@ -33,7 +35,7 @@ window.onmousemove = (e) => {
 
   trailer.dataset.type = interacting ? interactable.dataset.type : "";
 
-  if (interacting) {
-    icon.className = getTrailerClass(interactable.dataset.type);
+  if (!interacting) {
+    trailer.innerHTML = "";
   }
 };
