@@ -450,6 +450,11 @@ position: relative;
     width: 35ch;
     
   }
+  .contact:hover .mano-saludo {
+  color:white;
+  transform: translateY(-2px) rotate(45deg) ;
+  
+}
   
 }
 
