@@ -388,7 +388,7 @@ color:white !important;
   
    
   main > article {
-    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-template-rows: 1fr repeat(3, 0.5fr);
     height: max(700px, 100%);
   
     /*  */
