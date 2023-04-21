@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "javascript",
+    "autor": "alguien",
+    "años": 1995
+  },
+  {
+    "nombre": "python",
+    "autor": "su primo",
+    "años": 1995
+  },
+  {
+    "nombre": "fortran",
+    "autor": "su tio",
+    "años": 1400
+  }
+]
