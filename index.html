@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,37 +26,7 @@
     />
   </head>
   <body>
-    <nav data-toggled="false" data-transitionable="false">
-      <div id="nav-logo-section" class="nav-section">
-        <a href="./index.html">
-          <i class="fa-solid fa-landmark"></i>
-        </a>
-      </div>
-      <div id="nav-mobile-section">
-        <div id="nav-link-section" class="nav-section">
-          <a href="./about.html">ABOUT</a>
-          <a href="./work.html">WORK</a>
-        </div>
-        <div id="nav-social-section" class="nav-section">
-          <a href="https://github.com/CarlosGozalbes" target="_blank">
-            <i class="fa-brands fa-github navbar-icons"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/carlos-gozalbes-mendoza-933173225"
-            target="_blank"
-          >
-            <i class="bi bi-linkedin navbar-icons"></i>
-          </a>
-        </div>
-        <div id="nav-contact-section" class="nav-section">
-          <a href="./contact.html">GET IN TOUCH</a>
-        </div>
-      </div>
-      <button id="nav-toggle-button" type="button">
-        <span>Menu</span>
-        <i class="fa-solid fa-bars toggle-icon rotate"></i>
-      </button>
-    </nav>
+    {% include nav.html %}
 
     <main>
       <article data-index="0" data-status="active">
