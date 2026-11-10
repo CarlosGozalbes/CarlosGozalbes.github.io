@@ -1,11 +1,13 @@
-document.querySelector("body").addEventListener("mousemove", eyeball);
-function eyeball() {
-  var eye = document.querySelectorAll(".eye");
-  eye.forEach(function (eye) {
-    let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-    let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-    let radian = Math.atan2(event.pageX - x, event.pageY - y);
-    let rot = radian * (180 / Math.PI) * -1 + 0;
-    eye.style.transform = "rotate(" + rot + "deg)";
+(() => {
+  const eyes = document.querySelectorAll(".eye");
+
+  document.body.addEventListener("mousemove", (event) => {
+    for (const eye of eyes) {
+      const bounds = eye.getBoundingClientRect();
+      const x = bounds.left + eye.clientWidth / 2;
+      const y = bounds.top + eye.clientHeight / 2;
+      const angle = Math.atan2(event.pageX - x, event.pageY - y);
+      eye.style.transform = `rotate(${angle * (-180 / Math.PI)}deg)`;
+    }
   });
-}
+})();

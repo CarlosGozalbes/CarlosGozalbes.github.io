@@ -241,61 +241,6 @@
   border-top-left-radius: 10rem;
 }
 
-/* -- YouTube Link Styles -- */
-
-body.menu-toggled > .meta-link > span {
-  color: rgb(30, 30, 30);
-}
-
-#source-link {
-  bottom: 60px;
-}
-
-#source-link > i {
-  color: rgb(94, 106, 210);
-}
-
-#yt-link > i {
-  color: rgb(239, 83, 80);
-}
-main::-webkit-scrollbar {
-  display: none;
-}
-
-.meta-link {
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  bottom: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
-  display: inline-flex;
-  gap: 5px;
-  left: 10px;
-  padding: 10px 20px;
-  position: fixed;
-  text-decoration: none;
-  transition: background-color 400ms, border-color 400ms;
-  z-index: 10000;
-}
-
-.meta-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.meta-link > i, .meta-link > span {
-  height: 20px;
-  line-height: 20px;
-}
-
-.meta-link > span {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-}
 .sinpadding {
   padding: 0 !important;
 }
@@ -369,9 +314,7 @@ position: relative;
   overflow: hidden;
 }
 
-.go-work-first h4 {
-  margin: 0;
-}
+.go-work-first h4,
 .go-work-second h4 {
   margin: 0;
 }
@@ -458,147 +401,23 @@ position: relative;
   
 }
 
-.btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  z-index: 7;
-  border-radius: 50%;
-
-  color: white;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 20px 27px;
-  
-  text-transform: uppercase;
-  font-size: 3rem
-  ;
-  cursor: pointer;
-} 
-
-.btn:hover .homepageintroicon {
-  
-  
-  text-shadow: 0 0 5px #ffffff;
-}
-.btn:hover .inner {
-   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
-              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
-              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
-              inset 0px 0px 5px rgba(255, 255, 255, 0.7), 
-              inset 0px 0px 5px rgba(255, 255, 255, 0.7);
-              }
-
-
-
-
-.text-container {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: rgb(6, 11, 25);
-  z-index: 6;
-  overflow: hidden;
+.about-hover,
+.about-hover nav {
+  background-color: white;
 }
 
-.text-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  left: -50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: default;
-  z-index: 6;
+.about-hover nav,
+.about-hover .about-go-section,
+.about-hover #saludoContacto,
+.about-hover #goWorkFromIndex,
+.about-hover .nav-section {
+  border-color: black;
 }
 
-.text {
-  width: 300%;
-  font-family: "Voyage";
-  font-size: 5vw;
-  text-transform: uppercase;
-  opacity: 0.1;
-  color: white;
+.about-hover #go-about-first,
+.about-hover #go-about-second,
+.about-hover #cruz-about,
+.about-hover #workTitulo,
+.about-hover #iconoFlechaWork {
+  color: var(--accent-color);
 }
-
-@media only screen and (max-width: 1000px) { 
-.text-wrapper{
-  display: none;
-}
-.btn {
-display: none;
-}
-.text-container {
-  display: none;
-}
-}
-
-
-
- 
-.demo {
-  width: 100px;
-  height: 102px;
-  border-radius: 100%;
-  position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  animation: spin 5s infinite linear;
-}
-
-.circle {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.circle:nth-of-type(1) {
-  transform: rotate(0deg) translateX(7px);
-}
-
-.circle:nth-of-type(2) {
-  transform: rotate(70deg) translateY(7px);
-}
-
-.circle:nth-of-type(3) {
-  transform: rotate(140deg) translateY(-7px);
-}
-
-.circle:nth-of-type(4) {
-  transform: rotate(210deg) translateX(-7px);
-}
-
-.circle:nth-of-type(5) {
-  transform: rotate(280deg);
-}
-
-.inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: 5px solid rgba(255, 255, 255, 0.7);
-  border-right: none;
-  border-top: none;
-  background-clip: padding;
-  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.15);
-  animation: spin 2s infinite linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#clickme {
-  color: white; text-transform: none; font-size: 1rem;
-}
-
-
-

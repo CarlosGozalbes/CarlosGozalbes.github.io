@@ -1,28 +1,26 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; /* ABCDEFGHIJKLMNOPQRSTUVWXYZ */;
+(() => {
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const email = document.getElementById("myEmailEffect");
+  let interval;
 
-let interval = null;
+  email.addEventListener("mouseover", () => {
+    const original = email.dataset.value;
+    let iteration = 0;
+    clearInterval(interval);
 
-document.getElementById("myEmailEffect").onmouseover = (event) => {
-  let iteration = 0;
+    interval = setInterval(() => {
+      email.innerText = email.innerText
+        .split("")
+        .map((_, index) => index < iteration
+          ? original[index]
+          : letters[Math.floor(Math.random() * letters.length)])
+        .join("");
 
-  clearInterval(interval);
+      if (iteration >= original.length) {
+        clearInterval(interval);
+      }
 
-  interval = setInterval(() => {
-    event.target.innerText = event.target.innerText
-      .split("")
-      .map((letter, index) => {
-        if (index < iteration) {
-          return event.target.dataset.value[index];
-        }
-
-        return letters[Math.floor(Math.random() * 26)];
-      })
-      .join("");
-
-    if (iteration >= event.target.dataset.value.length) {
-      clearInterval(interval);
-    }
-
-    iteration += 1 / 3;
-  }, 30);
-};
+      iteration += 1 / 3;
+    }, 30);
+  });
+})();
